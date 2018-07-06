@@ -1,0 +1,12 @@
+<article class="container grid" [ngClass]="{'post': true, 'post-success': postLikes > 0, 'post-alert': postLikes < 0}">
+  <header class="post-header container grid">
+    <h2 class="post-title col8">{{ postTitle }}</h2>
+    <time class="col4">{{ postDate | date: 'EEEE d MMMM y' | lowercase}}</time>
+  </header>
+  <p class="post-content container">{{ postContent }}</p>
+  <section class="likes container grid">
+    <span class="likes-counter">{{ postLikes }}</span>
+    <button class="likes-btn btn btn-success" (click)="onLike()">Like it !</button>
+    <button class="likes-btn btn btn-alert" (click)="onUnlike()">Don't like it</button>
+  </section>
+</article>

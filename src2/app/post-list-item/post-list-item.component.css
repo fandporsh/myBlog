@@ -1,0 +1,70 @@
+.post {
+    box-shadow: 0 0 2px #aaa;
+    margin: 1rem 0;
+  }
+  .post-title {
+    color: #333;
+    margin: .3rem 0;
+    text-align: left;
+    width: 100%;
+  }
+  .post-success {
+    background: hsla(110, 50%, 50%, .3);
+  }
+  .post-success .post-title {
+    color: darkgreen;
+   }
+  .post-success .post-content {
+    color: darkgreen;
+  }
+  .post-alert {
+    background: hsla(10, 50%, 50%, .3);
+  }
+  .post-alert .post-title {
+    color: red;
+  }
+  .post-alert .post-content {
+    color: red;
+  }
+  .likes {
+    margin: 2rem 0;
+  }
+  .likes-counter {
+    color: #333;
+    font-size: 1.3rem;
+    position: relative;
+  }
+  .likes-counter::before {
+    color: red;
+    content: "❤";
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    z-index: -1;
+  }
+  .likes-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: .8rem;
+    padding: .5rem .8rem;
+    text-transform: uppercase;
+    transition: all .5s;
+    transform-origin: center bottom;
+  }
+  .likes-btn:hover, .likes-btn:focus {
+    box-shadow: 0 2px 2px 2px #aaa;
+    outline: none;
+    transform: scale(1.05);
+  }
+  .btn-success {
+    background: mediumseagreen;
+    grid-column: 8 / 10;
+  }
+  .btn-alert {
+    background: red;
+    grid-column: 10 / 12;
+  }
+  
